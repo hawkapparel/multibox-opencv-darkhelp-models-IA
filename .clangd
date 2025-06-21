@@ -1,0 +1,11 @@
+CompileFlags:
+  Add: 
+    - -IC:/wxWidgets-3.2.8/include
+    - -IC:/wxWidgets-3.2.8/lib/vc14x_x64_dll/mswud
+    - -D__WXMSW__
+    - -D_UNICODE
+    - -D_DEBUG
+    - -DWXUSINGDLL
+    - -DwxUSE_GUI=1
+    - --language=c++
+    - -std=c++20

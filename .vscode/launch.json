@@ -1,0 +1,33 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(lldb-mac) Launch",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/RoseMultibox.app",
+            "preLaunchTask": "Build with CMake (Debug)"
+        },
+        {
+            "name": "(lldb-linux) Launch",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/RoseMultibox",
+            "preLaunchTask": "Build with CMake (Debug)"
+        },
+        {
+            "name": "(Debug) Launch",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}\\build\\Debug\\RoseMultibox.exe",
+            "preLaunchTask": "Build with CMake (Debug)"
+        },
+        {
+            "name": "(msvc Release) Launch",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}\\build\\Release\\RoseMultibox.exe",
+            "preLaunchTask": "Build with CMake (Release)"
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+{
+  "configurations": [
+      {
+          "name": "Win32",
+          "includePath": [
+              "${workspaceFolder}/**",
+              "${workspaceFolder}/src",
+              "C:/wxWidgets-3.2.8/include",
+              "C:/wxWidgets-3.2.8/lib/vc14x_x64_dll/mswud"
+          ],
+          "defines": [
+              "__WXMSW__",
+              "_UNICODE",
+              "_DEBUG",
+              "WXUSINGDLL",
+              "wxUSE_GUI=1"
+          ],
+          "compilerPath": "C:/Program Files/LLVM/bin/clang++.exe",
+          "cStandard": "c17",
+          "cppStandard": "c++20",
+          "intelliSenseMode": "windows-clang-x64",
+          "configurationProvider": "ms-vscode.cmake-tools",
+          "browse": {
+              "path": [
+                  "${workspaceFolder}",
+                  "${workspaceFolder}/src",
+                  "C:/wxWidgets-3.2.8/include",
+                  "C:/wxWidgets-3.2.8/lib/vc14x_x64_dll/mswud"
+              ],
+              "limitSymbolsToIncludedHeaders": true,
+              "databaseFilename": "${workspaceFolder}/.vscode/browse.vc.db"
+          }
+      }
+  ],
+  "version": 4
+}

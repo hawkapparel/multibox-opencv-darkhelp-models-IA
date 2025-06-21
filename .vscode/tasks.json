@@ -1,0 +1,81 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build with CMake (Debug)",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "build",
+                "-j",
+                "--config",
+                "Debug"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "dependsOn": [
+                "Configure with CMake (Debug)"
+            ]
+        },
+        {
+            "label": "Configure with CMake (Debug)",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "-DCMAKE_BUILD_TYPE=Debug",
+                "-DCMAKE_C_COMPILER=clang",
+                "-DCMAKE_CXX_COMPILER=clang++",
+                "-S.",
+                "-Bbuild"
+            ]
+        },
+        {
+            "label": "Build with CMake (Release)",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "build",
+                "-j",
+                "--config",
+                "Release"
+            ],
+            "group": "build",
+            "dependsOn": [
+                "Configure with CMake (Release)"
+            ]
+        },
+        {
+            "label": "Configure with CMake (Release)",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "-DCMAKE_BUILD_TYPE=Release",
+                "-DCMAKE_C_COMPILER=clang",
+                "-DCMAKE_CXX_COMPILER=clang++",
+                "-S.",
+                "-Bbuild"
+            ]
+        },
+        {
+            "label": "Build with CMake",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "build",
+                "-j",
+                "--config",
+                "Debug"
+            ],
+            "group": "build",
+            "dependsOn": [
+                "Configure with CMake (Debug)"
+            ],
+            "problemMatcher": ["$msCompile"]
+        }
+    ]
+}

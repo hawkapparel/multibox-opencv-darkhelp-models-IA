@@ -78,6 +78,7 @@ set(SRCS
     src/main.cpp
     src/utils/Logger.cpp
     src/components/LargeCheckBox.cpp
+    src/core/WindowManager.cpp
     src/mainframes/MainFrame.cpp
 )
 
@@ -85,6 +86,7 @@ set(SRCS
 set(HEADERS
     src/utils/Logger.h
     src/components/LargeCheckBox.h
+    src/core/WindowManager.h
     src/mainframes/MainFrame.h
 )
 
